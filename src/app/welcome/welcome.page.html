@@ -1,0 +1,17 @@
+<ion-content fullscreen class="welcome">
+  <ion-slides class="slides" pager="true">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="slide">
+        <div class="img-wrapper">
+          <img src={{slide.image}} />
+        </div>
+        <div class="caption">
+          {{slide.caption}}
+        </div>
+        <div class="sub-caption">
+          {{slide.subCaption}}
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

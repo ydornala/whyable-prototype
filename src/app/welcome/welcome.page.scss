@@ -1,0 +1,23 @@
+.welcome {
+  background-color: #FFF;
+  .slides {
+    height: 100%;
+
+    .img-wrapper {
+      width: 184px;
+      height: 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .caption {
+      font-size: 22px;
+    }
+
+    .sub-caption {
+      font-size: 16px;
+    }
+  }
+}
