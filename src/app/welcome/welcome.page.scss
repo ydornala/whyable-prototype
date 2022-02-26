@@ -1,9 +1,12 @@
 .welcome {
-  background-color: #FFF;
+
   .slides {
     height: 100%;
+    background-image: url(../../assets/img/main-bg.png);
+    color: #2C3546;
 
     .img-wrapper {
+      margin: 35px auto;
       width: 184px;
       height: 80px;
 
@@ -14,10 +17,51 @@
 
     .caption {
       font-size: 22px;
+      font-weight: 400;
+      padding: 10px 0;
     }
 
     .sub-caption {
       font-size: 16px;
+      font-weight: 300;
+    }
+
+    .link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .skip {
+      margin: 45px 0;
+      color: #2C3546;
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .select-project {
+      margin: 25px 0;
+      color: #2C3546;
+      text-transform: uppercase;
+      line-height: 22px;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .text {
+        margin: 0 5px;
+      }
+
+      .icon {
+        display: flex;
+        font-size: 22px;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #2C3546 !important;
     }
   }
 }

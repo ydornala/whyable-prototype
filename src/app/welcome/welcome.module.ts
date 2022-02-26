@@ -8,11 +8,8 @@ import { WelcomePageRoutingModule } from './welcome-routing.module';
 
 import { WelcomePage } from './welcome.page';
 
-import { SliderComponent } from '../slider/slider.component';
-
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, WelcomePageRoutingModule],
-  declarations: [WelcomePage, SliderComponent],
-  exports: [SliderComponent],
+  declarations: [WelcomePage],
 })
 export class WelcomePageModule {}
