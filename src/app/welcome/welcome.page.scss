@@ -4,6 +4,13 @@
     height: 100%;
     background-image: url(../../assets/img/main-bg.png);
     color: #2C3546;
+    position: relative;
+
+    .slide {
+      top: 100px;
+      position: fixed;
+      width: 100%;
+    }
 
     .img-wrapper {
       margin: 35px auto;
@@ -17,7 +24,7 @@
 
     .caption {
       font-size: 22px;
-      font-weight: 400;
+      font-weight: 500;
       padding: 10px 0;
     }
 
@@ -32,16 +39,19 @@
     }
 
     .skip {
-      margin: 45px 0;
-      color: #2C3546;
-      line-height: 24px;
-      font-size: 14px;
+      bottom: 49px;
+      color: #507492;
+      line-height: 20px;
+      font-size: 16px;
       font-weight: 500;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .select-project {
       margin: 25px 0;
-      color: #2C3546;
+      color: #507492;
       text-transform: uppercase;
       line-height: 22px;
       font-size: 14px;
@@ -49,6 +59,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: fixed;
+      bottom: 100px;
+      width: 100%;
 
       .text {
         margin: 0 5px;
@@ -65,3 +78,5 @@
     }
   }
 }
+
+

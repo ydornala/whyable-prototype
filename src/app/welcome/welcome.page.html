@@ -11,18 +11,18 @@
         <div class="sub-caption">
           {{slide.subCaption}}
         </div>
-
-        <a [routerLink]="['/home']" *ngIf="i === slides.length - 1" class="link select-project">
-          <span class="text">Select a project</span>
-          <span class="icon">
-            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
-          </span>
-        </a>
-
-        <a [routerLink]="['/home']" *ngIf="i !== slides.length - 1" class="skip link">
-          <span class="text">Skip</span>
-        </a>
       </div>
+
+      <a [routerLink]="['/home']" *ngIf="i !== slides.length - 1" class="skip link">
+        <span class="text">Skip</span>
+      </a>
+
+      <a [routerLink]="['/home']" *ngIf="i === slides.length - 1" class="link select-project">
+        <span class="text">Select a project</span>
+        <span class="icon">
+          <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+        </span>
+      </a>
     </ion-slide>
   </ion-slides>
 </ion-content>
